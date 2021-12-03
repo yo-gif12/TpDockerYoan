@@ -2,42 +2,41 @@
    require APPROOT . '/views/includes/head.php';
 ?>
 
-<div class="navbar">
+<div>
     <?php
        require APPROOT . '/views/includes/navigation.php';
     ?>
 </div>
 
-<div class="container-login">
-    <div class="wrapper-login">
-        <h2>Register</h2>
+  <h2>Sign up</h2>
+  <form class="p-5">
 
-            <form
-                id="register-form"
-                method="POST"
-                action="<?php echo URLROOT; ?>/users/register"
-                >
-            <input type="text" placeholder="Username *" name="username">
-            <span class="invalidFeedback">
-                <?php echo $data['usernameError']; ?>
-            </span>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="form3Example1c" class="form-control" />
+                      <label class="form-label" for="form3Example1c">Username</label>
+                    </div>
+                  </div>
 
-            <input type="email" placeholder="Email *" name="email">
-            <span class="invalidFeedback">
-                <?php echo $data['emailError']; ?>
-            </span>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email" id="form3Example3c" class="form-control" />
+                      <label class="form-label" for="form3Example3c">Email</label>
+                    </div>
+                  </div>
 
-            <input type="password" placeholder="Password *" name="password">
-            <span class="invalidFeedback">
-                <?php echo $data['passwordError']; ?>
-            </span>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4c" class="form-control" />
+                      <label class="form-label" for="form3Example4c">Password</label>
+                    </div>
+                  </div>
 
-            <input type="password" placeholder="Confirm Password *" name="confirmPassword">
-            <span class="invalidFeedback">
-                <?php echo $data['confirmPasswordError']; ?>
-            </span>
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="button" class="btn btn-primary btn-lg">Register</button>
+                  </div>
 
-            <button id="submit" type="submit" value="submit">Submit</button>
-        </form>
-    </div>
-</div>
+                </form>

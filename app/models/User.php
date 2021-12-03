@@ -1,5 +1,5 @@
 <?php
-require APPROOT .'/libraries/Database.php';
+require APPROOT .'/Libraries/Database.php';
 
 class User extends Database{
     private $db;

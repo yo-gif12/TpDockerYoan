@@ -12,7 +12,7 @@ function current_url()
 if (in_array(current_url(),[
     "/",
     "/pages",
-    "/users/login",
+    "/Users/login",
     "/posts",
     "/register"
     ])) {

@@ -5,13 +5,10 @@ class Users extends Controller {
     }
 
     public function register() {
-        $data = [
-           
-        ];
-
+       
     }
     public function login() {
-        $this->view('users/login');
+        $this->view('Users/login');
     }
 
     public function createUserSession($user) {

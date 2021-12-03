@@ -1,7 +1,7 @@
 <?php
-include './config/configuration.php';
-include './libraries/Controller.php';
+include './Config/configuration.php';
+include './Libraries/Controller.php';
 
 $controller = new Controller();
-include './router/routes.php';
+include './Router/routes.php';
 
